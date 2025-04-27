@@ -1,0 +1,71 @@
+/* 一键开关：1=开启，0=关闭 */
+:root { --font-custom-enable: 1; }
+
+/* 字体链变量 */
+:root {
+  --user-sans-font:
+    "ABC Diatype Variable Unlicensed Trial",
+    ui-sans-serif,
+    "system-ui",
+    "-apple-system",
+    "IBM Plex Sans SC",
+    "Noto Sans CJK SC", "Source Han Sans VF",
+    "Noto Sans CJK TC", "Source Han Sans TC",
+    "Noto Sans CJK JP", "Source Han Sans JP",
+    "Noto Sans CJK KR", "Source Han Sans KR",
+    sans-serif;
+
+  --user-serif-font:
+    "PT Serif",
+    "HYXuanSong",
+    "Noto Serif CJK SC", "Source Han Serif VF",
+    "Noto Serif CJK TC", "Source Han Serif TC",
+    "Noto Serif CJK JP", "Source Han Serif JP",
+    "Noto Serif CJK KR", "Source Han Serif KR",
+    serif;
+
+  --user-mono-font:
+    ui-monospace,
+    "Input Mono Narrow",
+    "JetBrains Maple Mono",
+    monospace;
+}
+
+/* 默认Sans字体 */
+html, body {
+  font-family: var(--user-sans-font) !important;
+}
+
+/* 识别Serif元素 */
+.serif,
+[class*="serif" i],
+[style*="serif" i],
+font[face*="serif" i] {
+  font-family: var(--user-serif-font) !important;
+}
+
+/* Monospace元素 */
+code, pre, kbd, samp, textarea,
+input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
+  font-family: var(--user-mono-font) !important;
+}
+
+/* 最低CJK字重 */
+:lang(zh), :lang(ja), :lang(ko) {
+  font-weight: 500 !important;
+}
+
+/* 文本渲染优化 */
+* {
+  font-synthesis: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+/* 关闭开关还原 */
+:root[style*="--font-custom-enable:0"] {
+  --user-sans-font: inherit;
+  --user-serif-font: inherit;
+  --user-mono-font: inherit;
+}
