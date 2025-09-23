@@ -3,32 +3,31 @@
 
 /* 字体链变量 */
 :root {
-  --user-sans-font:
-    "ABC Diatype Variable Unlicensed Trial",
-    ui-sans-serif,
-    "system-ui",
-    "-apple-system",
-    "IBM Plex Sans SC",
-    "Noto Sans CJK SC", "Source Han Sans VF",
-    "Noto Sans CJK TC", "Source Han Sans TC",
-    "Noto Sans CJK JP", "Source Han Sans JP",
-    "Noto Sans CJK KR", "Source Han Sans KR",
-    sans-serif;
+    --user-sans-font:
+      "Geist",
+      "Mona Sans",
+      "Sarasa Gothic SC",
+      "Noto Sans CJK SC", "Source Han Sans VF",
+      "Noto Sans CJK TC", "Source Han Sans TC",
+      "Noto Sans CJK JP", "Source Han Sans JP",
+      "Noto Sans CJK KR", "Source Han Sans KR",
+      sans-serif;
 
-  --user-serif-font:
-    "PT Serif",
-    "HYXuanSong",
-    "Noto Serif CJK SC", "Source Han Serif VF",
-    "Noto Serif CJK TC", "Source Han Serif TC",
-    "Noto Serif CJK JP", "Source Han Serif JP",
-    "Noto Serif CJK KR", "Source Han Serif KR",
-    serif;
+    --user-serif-font:
+      "Merriweather",
+      "Merriweather 18pt",
+      "FZPingXianYaSongS-R-GB",
+      "HYXuanSong",
+      "Noto Serif CJK SC", "Source Han Serif VF",
+      "Noto Serif CJK TC", "Source Han Serif TC",
+      "Noto Serif CJK JP", "Source Han Serif JP",
+      "Noto Serif CJK KR", "Source Han Serif KR",
+      serif;
 
-  --user-mono-font:
-    ui-monospace,
-    "Input Mono Narrow",
-    "JetBrains Maple Mono",
-    monospace;
+    --user-mono-font:
+      "Google Sans Code",
+      "JetBrains Maple Mono",
+      monospace;
 }
 
 /* 默认Sans字体 */
